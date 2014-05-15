@@ -40,6 +40,7 @@ h4 {
 
 a {
     color: #0083e8; 
+    position: relative;
 }
 
 b, strong {
@@ -67,6 +68,18 @@ img {
     -o-animation: colorize 5s cubic-bezier(0, 0, #e7e291.78, .36) 1;
     -ms-animation: colorize 5s cubic-bezier(0, 0, #e7e291.78, .36) 1;
 }
+
+div#overlay {
+    width: 680px;
+    background: black;
+    height: 440px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    opacity:0.8;
+}
+
+jQuery('#overlay').animate({'opacity':'0'},1000);
 
 @keyframes colorize {
     0% {
