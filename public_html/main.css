@@ -79,8 +79,6 @@ div#overlay {
     opacity:0.8;
 }
 
-jQuery('#overlay').animate({'opacity':'0'},1000);
-
 @keyframes colorize {
     0% {
         -webkit-filter: grayscale(100%);
